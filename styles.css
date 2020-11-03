@@ -1,0 +1,276 @@
+*{
+    font-family: "segoe ui";
+    scroll-behavior: smooth;
+}
+
+.clearfix{
+    clear: both;
+    float:none;
+}
+body{
+    background-image: url(imagenesFC/body.jpg); 
+    background-attachment: fixed;
+    background-size: 1366px 768px; 
+  
+    
+}
+
+.slider,
+.contenido,
+.imagen-1,
+.servicios,
+.piezas,
+.contactos{
+
+padding:20px;
+border-radius: 4px;
+
+}
+.servicios,
+.piezas,
+.footer,
+.contactos{
+    border-top: 2px solid white;
+}
+
+p{
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+    color:white;
+}
+h2{
+    font-size:36px;
+    color:white;
+    letter-spacing: 1px;
+}
+button{
+    padding: 12px;
+    font-weight: 400;
+    border-radius: 10px;
+    background-color: darkgreen;
+    color: white;
+    font-size: 20px;
+    border:2px solid green
+}
+
+
+.logo{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: darkgreen;
+    color: white;
+    text-align: center;
+    min-width: 40px;      
+    border-radius: 4px;
+            
+}
+
+.menu{
+background: black;
+width:80%;
+text-align: center;
+padding:20px;
+margin: 0pc auto;
+
+}
+
+.menu ul{
+line-height: 60px;
+padding:0px;
+border-bottom: 2px solid white;
+padding-bottom: 5px;
+text-align: initial;
+
+    
+}
+
+.menu ul li{
+display: inline-block;
+height: 60px;
+}
+
+.menu a{
+display: block;
+text-decoration: none;
+color:white;
+font-size: 18px;
+text-transform: uppercase;
+padding-left: 30px;
+padding-right: 30px;
+transition: all 300ms;
+
+}
+.menu a:hover{
+    
+transform: scale(1.1, 1.1);
+background:darkgreen ;
+
+}
+.contenedor{
+    display: grid;
+    opacity: 0.90;
+    width: 80%;
+    margin:0px auto;
+    padding:20px;
+    background-color: black;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: 
+                          "slider slider slider"
+                          "contenido contenido imagen-1"
+                          "servicios servicios servicios"
+                          "piezas piezas piezas"
+                          "contactos contactos contactos"
+                          "footer footer footer";
+}
+
+
+.slider{
+    background-color:darkgreen;
+    color: white;
+    min-height: 200px;
+    grid-area:slider;
+    align-items: center;
+    
+   
+
+}
+#tituloSlider{
+    clear: both;
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bxslider img{
+width: 100%;
+height: 520px;
+}
+
+.bx-wrapper,.bx-viewport{
+   
+   min-height: 190px;
+   height: 520px;
+   margin: 0px auto;
+   border: none !important;
+   background: none !important;
+   
+   
+}
+.contenido{
+    grid-area: contenido;
+}
+
+.imagen-1{
+    /* background: goldenrod; */
+    /* display: flex; */
+   /*  text-align: center;
+    justify-content: center;
+    align-items: center; */
+    grid-area:imagen-1;
+    color: white;
+    
+    
+   
+}
+.imagen-1 img{
+    width:100%;
+    height: 80%;
+}
+
+.servicios{
+    grid-area:servicios;
+    
+}
+.piezas{
+    grid-area:piezas;
+
+}
+.piezas #pieza{
+    width: 60%;
+    float:left;
+    
+
+}
+.piezas #imagen-2{
+width: 35%;
+float:right;
+
+}
+#imagen-2 img{
+    width: 100%;
+    height: 250px;
+    
+}
+
+
+
+.contactos{
+    grid-area: contactos;
+}
+.footer{
+    grid-area: footer;
+    background:black;
+    color:white;
+    padding: 20px;
+   
+}
+
+@media screen and (max-width:768px){
+     .contenedor{
+     
+        width: 80%;
+        margin:0px auto;
+        padding:2px;
+        
+        
+        column-gap: 5px;
+        row-gap: 5px;
+        
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,auto);
+        grid-template-areas:"slider slider slider"
+                            "contenido contenido contenido"
+                            "imagen-1 imagen-1 imagen-1"
+                            "servicios servicios servicios"
+                            "piezas piezas piezas"
+                            "contactos contactos contactos"
+                            "footer footer footer";
+    
+                            
+        
+                        
+                            
+    } 
+    .servicios,
+    .piezas,
+    .contenido,
+    .contactos{
+        font-size: 12px;
+
+    }
+    .bxslider img{
+        width: 100%;
+        height: 300px;
+        }
+        
+        .bx-wrapper,.bx-viewport{
+           
+           min-height: 190px;
+           height: 300px;
+           margin: 0px auto;
+           border: none !important;
+           background: none !important;
+           
+           
+        }
+    
+    
+   
+    
+
+
+}
