@@ -117,34 +117,38 @@ background:darkgreen ;
     column-gap: 20px;
     row-gap: 20px;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(6,auto);
+    grid-template-rows: repeat(7,auto);
     grid-template-areas: 
-                          "slider slider slider"
-                          "contenido contenido imagen-1"
-                          "servicios servicios servicios"
-                          "piezas piezas piezas"
-                          "contactos contactos contactos"
-                          "footer footer footer";
+                        "header header header"
+                        "slider slider slider"
+                        "contenido contenido imagen-1"
+                        "servicios servicios servicios"
+                        "piezas piezas piezas"
+                        "contactos contactos contactos"
+                        "footer footer footer";
 }
-
-
-.slider{
-    background-color:darkgreen;
-    color: white;
-    min-height: 200px;
-    grid-area:slider;
-    align-items: center;
+.header{
+    grid-area: header;
     
-   
-
 }
+.menu{
+    width:100%;
+}
+
 #tituloSlider{
     clear: both;
     height: 50px;
     text-transform: uppercase;
     text-align: center;
 }
+.slider{
+    background-color:darkgreen;
+    color: white;
+    min-height: 200px;
+    grid-area:slider;
+    align-items: center;
 
+}
 .bxslider img{
 width: 100%;
 height: 520px;
