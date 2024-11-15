@@ -1,4 +1,4 @@
-# Pagina Web CyberCafe    
+# Web Page CyberCafe | HTML, CSS, Javascript, JQuery
 Informative web page built with purpose to introduce in internet to show services they give in that place.
 
 # How to run
